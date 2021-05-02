@@ -65,7 +65,10 @@ plt.ylabel("SSE")
 plt.show()
 
 
-print(f'The elbow point is the point where the SSE curve begins to bend.\nThe x-value of this point is thought to be a good compromise between error and cluster count.\nThe elbow is located at x = 3 in this case.')
+print(f'''The elbow point is the point where the SSE curve begins to bend. 
+The x-value of this point is thought to be a good compromise between error and cluster count.
+To find the optimanal number of cluster you have to look if the onwards point of the total WCSS (Within Cluster Sum of Squares) doesn’t decrease significantly.
+The elbow is located at x = 4 in this case.''')
 
 
 # iris dataset
@@ -85,7 +88,7 @@ plt.xlabel("Number of cluster")
 plt.ylabel("SSE")
 plt.show()
 
-print("number of clusters on the data is 4")
+print("The number of clusters on the Iris dataset is 3")
 
 
 
